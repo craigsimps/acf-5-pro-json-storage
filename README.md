@@ -5,7 +5,7 @@ I use ACF 5 Pro for most custom WordPress projects, and the latest version suppo
 
 I prefer for these JSON files to be stored outside of the theme, because they're key to the functionality of the website, and `functionality === plugin`.
 
-Install and activate this plugin, and ACF will automatically save the JSON output to the `acf-json` folder within the plugin. 
+Once the plugin is installed and activate it will automatically save field groups as JSON within the plugin `/acf-json/` folder when they are updated or saved.
 
 ## Requirements
 * ACF 5 Pro (Synchronized JSON requires at least v5.1.5)
