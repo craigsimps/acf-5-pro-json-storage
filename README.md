@@ -1,5 +1,5 @@
-# Project-specific Custom Fields
-Save ACF 5 Pro custom fields as JSON within this plugin, rather than inside the theme.
+# ACF Json Storage
+Save ACF 5 Pro custom fields as JSON within this plugin, rather than inside your theme.
 
 I use ACF 5 Pro for most custom WordPress projects, and the latest version supports saving your Field Groups to JSON. To activate this functionality out of the box, all you have to do is create a folder within your _theme_ called `/acf-json/`. But I don't like that.
 
