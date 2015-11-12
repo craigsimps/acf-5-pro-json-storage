@@ -18,6 +18,8 @@ I prefer for these JSON files to be stored outside of the theme, because they're
 
 Once the plugin is installed and activate it will automatically save field groups as JSON within the plugin's `/acf-json/` folder when they are updated or saved.
 
+This plugin is under active development on [Github](https://github.com/craigsimps/acf-pro-json-storage/)
+
 = Requirements =
 * ACF 5 Pro (Synchronized JSON requires at least v5.1.5)
 
