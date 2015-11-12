@@ -9,7 +9,7 @@
  * @wordpress-plugin
  * Plugin Name:       ACF JSON Storage
  * Plugin URI:        http://designed2.co.uk/
- * Description:       Store ACF 5 Pro JSON outside of the recommended /acf-json/ folder.
+ * Description:       Store ACF 5 Pro JSON outside of the recommended theme /acf-json/ folder.
  * Version:           1.0.0
  * Author:            Craig Simpson
  * License:           GPL-2.0+
