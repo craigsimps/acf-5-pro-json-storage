@@ -20,11 +20,11 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-if ( ! defined( 'PCF_LOCATION' ) ) {
-	define( 'PCF_LOCATION' , trailingslashit( plugin_dir_path( __FILE__ ) ) );
+if ( ! defined( 'AJS_LOCATION' ) ) {
+	define( 'AJS_LOCATION' , trailingslashit( plugin_dir_path( __FILE__ ) ) );
 }
 
-add_filter( 'acf/settings/save_json', 'pcf_acf_json_save_point' );
+add_filter( 'acf/settings/save_json', 'ajs_acf_json_save_point' );
 /**
  * Change ACF JSON save point to within this plugin rather than theme.
  *
@@ -32,11 +32,11 @@ add_filter( 'acf/settings/save_json', 'pcf_acf_json_save_point' );
  *
  * @return string Path to save ACF JSON files.
  */
-function pcf_acf_json_save_point() {
-	return PCF_LOCATION . 'acf-json';
+function ajs_acf_json_save_point() {
+	return AJS_LOCATION . 'acf-json';
 }
 
-add_filter( 'acf/settings/load_json', 'pcf_acf_json_load_point' );
+add_filter( 'acf/settings/load_json', 'ajs_acf_json_load_point' );
 /**
  * Change ACF JSON load point to within this plugin rather than theme.
  *
@@ -45,9 +45,9 @@ add_filter( 'acf/settings/load_json', 'pcf_acf_json_load_point' );
  * @param 	array $paths Existing ACF JSON load paths.
  * @return 	array Paths to load ACF JSON files.
  */
-function pcf_acf_json_load_point( $paths ) {
+function ajs_acf_json_load_point( $paths ) {
 	unset( $paths[ 0 ] );
-	$paths[] = PCF_LOCATION . 'acf-json';
+	$paths[] = AJS_LOCATION . 'acf-json';
 
 	return $paths;
 }
