@@ -1,13 +1,13 @@
 <?php
 /**
- * ACF JSON Storage
+ * ACF 5 Pro JSON Storage
  *
  * @package    ACF_JSON_Storage
  * @author     Craig Simpson <csimps@gmail.com>
  * @license    GPL-2.0+
  *
  * @wordpress-plugin
- * Plugin Name:       ACF JSON Storage
+ * Plugin Name:       ACF 5 Pro JSON Storage
  * Plugin URI:        https://github.com/craigsimps/acf-json-storage
  * Description:       Store ACF 5 Pro JSON outside of the recommended theme /acf-json/ folder.
  * Version:           1.0.0
