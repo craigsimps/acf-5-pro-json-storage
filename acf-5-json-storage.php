@@ -24,6 +24,30 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
+register_activation_hook( __FILE__, 'ajs_activation_logic' );
+/**
+ * Check if ACF Pro is active. If not, do not activate this plugin.
+ * 
+ * @since 1.0.0
+ */
+function ajs_activation_logic() {
+	if ( ! is_plugin_active( 'advanced-custom-fields-pro/acf.php' ) ) {
+		deactivate_plugins(plugin_basename(__FILE__));
+	}
+}
+
+add_action( 'deactivated_plugin', 'ajs_detect_plugin_deactivation', 10, 2 );
+/**
+ * If a plugin is deactivated, check and see if it's ACF Pro. If it is, deactivate this plugin.
+ * 
+ * @since 1.0.0
+ */
+function ajs_detect_plugin_deactivation( $plugin, $network_activation ) {
+    if ( $plugin == "advanced-custom-fields-pro/acf.php" ) {
+        deactivate_plugins( plugin_basename( __FILE__ ) );
+    }
+}
+
 add_filter( 'acf/settings/save_json', 'ajs_acf_json_save_point' );
 /**
  * Change ACF JSON save point to within this plugin rather than theme.
