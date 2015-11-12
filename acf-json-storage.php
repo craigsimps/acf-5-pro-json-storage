@@ -1,14 +1,14 @@
 <?php
 /**
- * Project Custom Fields
+ * ACF JSON Storage
  *
- * @package    Project_Custom_Fields
+ * @package    ACF_JSON_Storage
  * @author     Craig Simpson <csimps@gmail.com>
  * @license    GPL-2.0+
  *
  * @wordpress-plugin
- * Plugin Name:       Project Custom Fields
- * Plugin URI:        http://yourwebsite.com/
+ * Plugin Name:       ACF JSON Storage
+ * Plugin URI:        http://designed2.co.uk/
  * Description:       Store ACF 5 Pro JSON outside of the recommended /acf-json/ folder.
  * Version:           1.0.0
  * Author:            Craig Simpson
