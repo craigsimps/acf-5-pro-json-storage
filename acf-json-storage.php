@@ -12,10 +12,12 @@
  * Description:       Store ACF 5 Pro JSON outside of the recommended theme /acf-json/ folder.
  * Version:           1.0.0
  * Author:            Craig Simpson
+ * Text Domain:	      acf-pro-json-storage
+ * Domain Path		  /languages
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- * GitHub Plugin URI: craigsimps/acf-json-storage
- * GitHub Plugin URI: https://github.com/craigsimps/acf-json-storage
+ * GitHub Plugin URI: craigsimps/acf-pro-json-storage
+ * GitHub Plugin URI: https://github.com/craigsimps/acf-pro-json-storage
  */
 
 if ( ! defined( 'WPINC' ) ) {
