@@ -8,20 +8,18 @@
  *
  * @wordpress-plugin
  * Plugin Name:       ACF JSON Storage
- * Plugin URI:        http://designed2.co.uk/
+ * Plugin URI:        https://github.com/craigsimps/acf-json-storage
  * Description:       Store ACF 5 Pro JSON outside of the recommended theme /acf-json/ folder.
  * Version:           1.0.0
  * Author:            Craig Simpson
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
+ * GitHub Plugin URI: craigsimps/acf-json-storage
+ * GitHub Plugin URI: https://github.com/craigsimps/acf-json-storage
  */
 
 if ( ! defined( 'WPINC' ) ) {
 	die;
-}
-
-if ( ! defined( 'AJS_LOCATION' ) ) {
-	define( 'AJS_LOCATION' , trailingslashit( plugin_dir_path( __FILE__ ) ) );
 }
 
 add_filter( 'acf/settings/save_json', 'ajs_acf_json_save_point' );
@@ -33,7 +31,7 @@ add_filter( 'acf/settings/save_json', 'ajs_acf_json_save_point' );
  * @return string Path to save ACF JSON files.
  */
 function ajs_acf_json_save_point() {
-	return AJS_LOCATION . 'acf-json';
+	return trailingslashit( plugin_dir_path( __FILE__ ) ) . 'acf-json';
 }
 
 add_filter( 'acf/settings/load_json', 'ajs_acf_json_load_point' );
@@ -47,7 +45,7 @@ add_filter( 'acf/settings/load_json', 'ajs_acf_json_load_point' );
  */
 function ajs_acf_json_load_point( $paths ) {
 	unset( $paths[ 0 ] );
-	$paths[] = AJS_LOCATION . 'acf-json';
+	$paths[] = trailingslashit( plugin_dir_path( __FILE__ ) ) . 'acf-json';
 
 	return $paths;
 }
