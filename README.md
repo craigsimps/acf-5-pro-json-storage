@@ -13,5 +13,5 @@ Once the plugin is installed and activate it will automatically save field group
 
 ## Getting Started with ACF Local JSON
 
-http://www.advancedcustomfields.com/resources/local-json/
-http://www.advancedcustomfields.com/resources/synchronized-json/
+* http://www.advancedcustomfields.com/resources/local-json/
+* http://www.advancedcustomfields.com/resources/synchronized-json/
