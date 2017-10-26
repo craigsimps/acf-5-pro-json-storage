@@ -1,0 +1,23 @@
+{
+  "name": "craigsimps/acf-5-pro-json-storage",
+  "description": "Save ACF 5 Pro field groups as JSON within this plugin, rather than inside your theme.",
+  "keywords": ["wordpress-plugin", "advanced-custom-fields", "json-storage"],
+  "type": "wordpress-plugin",
+  "homepage": "https://github.com/craigsimps/acf-5-pro-json-storage",
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "Craig Simpson",
+      "homepage": "https://craigsimpson.scot",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/craigsimps/acf-5-pro-json-storage/issues",
+    "source": "https://github.com/craigsimps/acf-5-pro-json-storage"
+  },
+  "require": {
+    "composer/installers": "^1.0",
+    "php": ">=5.3.4"
+  }
+}
